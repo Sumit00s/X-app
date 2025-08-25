@@ -12,5 +12,6 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(ENV.PORT,()=>{
+    console.log("Mongo URL:", ENV.MONGO_URL);
     console.log(`Server is Running on Port : ${ENV.PORT}`)
 })
