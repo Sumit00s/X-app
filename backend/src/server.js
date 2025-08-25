@@ -4,9 +4,6 @@ import { connectDB } from "./config/db.js";
 
 const app = express();
 
-// Connecting to DB;
-connectDB();
-
 app.get("/",(req,res)=>{
     res.send("Hello from server");
 })
